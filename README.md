@@ -5,13 +5,13 @@ A collection of mini apps and webpage components built with vanilla JavaScript t
 Included in this collection is a/an
 
 - Analog Clock
-- Auto text writer
+- Automatic Write Text
 - Carousel
 - Dark Mode Toggler
 - Drum Kit
 - Popup / Modal
 - Emoji Rain
-- Sound Board 
+- Hallelujah Chorus Music Board
 - Toast Notification
 - Word Blog
 - Zoom Effect
