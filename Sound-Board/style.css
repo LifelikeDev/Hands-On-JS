@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(15, 53, 124), rgb(84, 90, 3))
+}
+/* .music-board {
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.content {
+    color: #fff;
+    text-align: center;
+}
+.content p {
+    font-size: 1.1rem;
+}
+button {
+    padding: .8em 1em;
+    margin: 1em 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    border-radius: .3em;
+}
+button:active,
+button:focus {
+    outline: .15em solid;
+}

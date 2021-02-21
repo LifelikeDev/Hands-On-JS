@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: url(img/bridge.jpg);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.clock {
+  width: 25rem;
+  height: 25rem;
+  border: 15px solid transparent;
+  border-radius: 50%;
+  background: #000;
+  background-clip: padding-box;
+  position: relative;
+  padding: 2rem;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  margin: -10px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, red, orange);
+}
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* accounts for the height of the clock hands */
+}
+.hand {
+  width: 50%;
+  height: 0.3rem;
+  border-radius: 10rem;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.2s forwards;
+  timing-function: cubic-bezier(0.01, 0.83, 0.96, 0.36);
+}

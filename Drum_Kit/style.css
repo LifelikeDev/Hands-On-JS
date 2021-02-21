@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", "Montserrat", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/bridge.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+div.keys {
+  color: #fff;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.keys .key kbd {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+div.keys .key span {
+  font-size: 12px;
+}
+
+div.keys .key {
+  width: 7rem;
+  height: 5rem;
+  padding: 1rem;
+  outline: 2px solid rgb(49, 49, 48);
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+.playing {
+  border: 5px solid rgb(247, 247, 70);
+  transform: scale(1.15);
+}
+.sound {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgb(245, 145, 240);
+}
