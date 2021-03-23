@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --bg-color-one: #636363;
+  --bg-color-two: #1b4332;
+  --bg-color-three: #84a59d;
+  --bg-color-four: #52796f;
+  --bg-color-five: #4a7976;
+  --income-color: rgb(137, 230, 209);
+  --expenditure-color: rgb(252, 204, 204);
+  --m-half: 0.5rem;
+  --m-one: 1rem;
+  --m-oneHalf: 1.5rem;
+  --m-two: 2rem;
+  --text-color-one: #444;
+  --text-color-two: #333;
+  --text-color-three: #222;
+}
+
+body {
+  background-color: var(--bg-color-two);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 700px;
+  max-width: 90vw;
+  /* outline: 2px solid yellow; */
+}
+
+.main-header {
+  font-size: 30px;
+  margin-bottom: var(--m-oneHalf);
+  text-align: center;
+}
+
+/* Information Display */
+.app-wrapper {
+  background-color: var(--bg-color-three);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: var(--m-one);
+  margin: 0 auto;
+  width: 400px;
+  max-width: 90%;
+  /* border: 2px solid orangered; */
+}
+
+.app-wrapper > div {
+  background-color: #d5f1ea;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #000000;
+  color: var(--text-color-one);
+  padding: var(--m-one);
+  margin: 0 auto var(--m-half);
+  /* width: 80%; */
+}
+
+.app-wrapper h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.balance {
+  text-align: center;
+}
+
+#total-balance {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.income-expenditure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.income-expenditure > div {
+  padding: 0.3rem 1rem;
+  width: 100%;
+}
+
+.income {
+  background-color: var(--income-color);
+}
+
+#income,
+#expenditure {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.expenditure {
+  background-color: var(--expenditure-color);
+}
+
+/* List Display */
+.list {
+  margin: var(--m-one) auto;
+}
+
+.list li {
+  background-color: var(--bg-color-five);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  margin-bottom: var(--m-half);
+}
+
+.list li.income {
+  border-bottom: 3px solid var(--income-color);
+}
+
+.list li.expenditure {
+  border-bottom: 3px solid var(--expenditure-color);
+}
+
+.tag-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  /* outline: 1px solid red; */
+}
+
+i {
+  color: rgb(204, 48, 48);
+  cursor: pointer;
+}
+
+i:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* Form Display */
+form {
+  padding: var(--m-half) var(--m-one);
+  margin: var(--m-one) auto 0;
+}
+
+.form-control {
+  margin-bottom: var(--m-half);
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  color: var(--text-color-two);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto var(--m-half);
+  width: 100%;
+}
+
+input,
+select,
+button {
+  font-size: 14px;
+  padding: 0.4rem 0.5rem;
+  width: 100%;
+}
+
+button {
+  background-color: var(--bg-color-five);
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-top: var(--m-half);
+}
+
+button:hover {
+  background-color: var(--bg-color-two);
+}
+
+/* Footer */
+.footer {
+  color: #bbb;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: var(--m-one) 0;
+}
+
+.footer-intro {
+  margin-bottom: var(--m-half);
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    max-width: 95vw;
+  }
+
+  .main-header {
+    font-size: 26px;
+  }
+
+  .income-expenditure {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    padding: var(--m-half) 0;
+  }
+}

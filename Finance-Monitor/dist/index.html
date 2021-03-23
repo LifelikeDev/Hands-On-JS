@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Finance Monitor</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1 class="main-header">Finance Monitor</h1>
+
+      <section class="app-wrapper">
+        <div class="balance">
+          <h4>Total Balance</h4>
+          <p id="total-balance">$0</p>
+        </div>
+        <div class="income-expenditure">
+          <div class="income">
+            <h4>Income</h4>
+            <p id="income">$0</p>
+          </div>
+          <div class="expenditure">
+            <h4>Expenditure</h4>
+            <p id="expenditure">$0</p>
+          </div>
+        </div>
+
+        <ul class="list" id="list">
+          <!-- To be dynamically updated with JS -->
+        </ul>
+
+        <form id="form">
+          <div class="form-control">
+            <label for="type">Category</label>
+            <select name="type" id="select-type">
+              <option value="income">Earnings</option>
+              <option value="expense">Expenses</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="name">Tag</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter a name tag..."
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              placeholder="Enter an amount..."
+            />
+          </div>
+
+          <div class="form-control">
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-intro">Designed & Built by Navian</p>
+      <p class="copy-para">&copy; <span id="copy"></span></p>
+    </footer>
+
+    <script src="assets/index.js"></script>
+  </body>
+</html>
