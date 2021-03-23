@@ -11,6 +11,7 @@ Included in this collection is a/an
 - Drum Kit
 - Popup / Modal
 - Emoji Rain
+- Finance Monitor app
 - Hallelujah Chorus Music Board
 - Toast Notification
 - Word Blog
